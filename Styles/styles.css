@@ -290,11 +290,11 @@ body{
 -----------------*/
 .contracts{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgba(255, 144, 14, 0.1) ;
     gap:100px;
-    padding: 40px 150px;
-    margin-top: 100px;
+    padding: 40px 120px;
+    margin: 100px 150px 0;
 }
 .contract-title{
     font-weight: 700;
@@ -478,18 +478,13 @@ body{
         margin: 0;
         padding: 20px;
     }
-    .team-title{
-        
-    }
-    .team-desc{
-
-    }
     .team-images{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0 20px;
         row-gap: 10px;
+        margin-bottom: 50px;
     }
     .team-images>img{
         width: 100%;
@@ -499,10 +494,13 @@ body{
     .contracts{
         flex-direction: column;
         padding: 20px;
+        margin:0;
+        row-gap: 20px;
     }
     .contract input[type="text"], input[type="email"], textarea{
         padding: 10px 0 10px 5px;  
      }
+     /* Footer  */
     .footer{
         width: 100%;
         margin: 0;
