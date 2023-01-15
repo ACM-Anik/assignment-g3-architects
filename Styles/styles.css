@@ -171,8 +171,6 @@ body{
 .btn-10year:hover{
     transform: scale(1.2);
     transition:transform 2s ;
-    
-
 }
 
 /*----------------
@@ -259,6 +257,37 @@ body{
 /*----------------
    Section-Five
 ----------------*/
+.section-five{
+    margin:100px 0px ;
+  }
+.team-info{
+    text-align: center;
+  }
+.team-title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.team-desc{
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.team-images{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 10px;
+}
+.team-images>img{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+/*----------------
+   section-Six
+-----------------*/
 .contracts{
     display: flex;
     justify-content: space-around;
@@ -300,7 +329,6 @@ body{
     background-color: #FF900E;
     padding: 20px 40px;
 }
-
 /*-------------
    Footer 
 -------------*/
@@ -313,7 +341,7 @@ body{
     color: #424242;
     border-radius: 8px;
     padding: 30px 0;
-    margin: 100px 150px 200px;
+    margin: 100px 150px 100px;
 }
 
 /*-----------------
@@ -445,7 +473,29 @@ body{
         gap: 50px;
         padding: 20px;
     }
+/* section-five */
+    .team-info{
+        margin: 0;
+        padding: 20px;
+    }
+    .team-title{
+        
+    }
+    .team-desc{
 
+    }
+    .team-images{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        row-gap: 10px;
+    }
+    .team-images>img{
+        width: 100%;
+        height: 100%;
+    }
+    /* section-six */
     .contracts{
         flex-direction: column;
         padding: 20px;
