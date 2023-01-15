@@ -33,8 +33,8 @@ body{
 }
 .header-title{
     color:var(--primary-color);
-    font-weight: 700;
-    font-size: 45px;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 /* banner-part */
@@ -47,7 +47,7 @@ body{
 .banner-title{
     color:var(--primary-color);
     font-weight: 700;
-    font-size: 64px;
+    font-size: 3em;
     margin: 20px 0;
 }
 .banner-desc{
@@ -70,7 +70,7 @@ body{
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    width: 500px;
+    
      
 }
 
@@ -293,7 +293,7 @@ body{
     border-radius: 8px;
     color: #FFFFFF;
     background-color: #FF900E;
-    padding: 20px 30px;
+    padding: 20px 40px;
 }
 
 /*-------------
@@ -314,8 +314,131 @@ body{
 /*-----------------
    Media-Queries
 ------------------*/
-@media only screen (max-width:576px){
+@media only screen and (max-width:576px){
     body,html{
         width:100%;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-bar{
+        width: auto;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav{
+        margin: 0;
+        padding: 0;
+    }
+    .banner{
+     margin: 0;
+    }
+    .banner-title{
+        margin: 0;
+    }
+    .banner-desc{
+        margin:0;
+    }
+    .banner-img>img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+/* section-one */
+    .section-one{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .album{
+        margin:0;
+        padding: 20px;
+    }
+    .album>img{
+        width: 100%;
+        height: 100%;
+    }
+    .album-info{
+        margin: 0;
+        padding: 20px;
+    }
+
+/* section-Two  */
+    .section-two{
+        flex-direction: column;
+    }
+    .features{
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+    }
+    .feat-img{
+        margin: 0;
+    }
+    .feat-img>img{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-10year{
+        margin:0;
+    }
+
+/* Section-three */
+    .facts{
+        margin:0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .facts-desc{
+        margin:0;
+    }
+    .facts-list{
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin:40px 0;   
+    }
+    .facts-info{
+        margin: 0;
+    }
+/* Section-four  */
+    .sponsors{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .spon-title{
+        margin: 0;
+        padding: 20px;
+    }
+    .spon-desc{
+        margin: 0 ;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .sponsors-logo{
+        grid-template-columns: repeat(2, 100px);
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .contracts{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .contract input[type="text"], input[type="email"], textarea{
+        padding: 10px 0 10px 5px;  
+     }
+    .footer{
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 }
