@@ -140,9 +140,6 @@ body{
     text-align: left;
 }
 /* feat  */
-.feat-info{
-   
-}
 .feat-info-details{
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -167,9 +164,12 @@ body{
     font-weight: 500;
     font-size: 20px;
    border-radius: 8px;
-   padding: 20px 25px;
+   padding: 30px 30px;
+   margin-top: -90px;
+   margin-left: -70px;
    
 }
+
 /*----------------
   Section-Three
 -----------------*/
@@ -181,12 +181,15 @@ body{
     color: var(--primary-color);
     font-weight: 700;
     font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 .facts-desc{
     color: #727272;
     font-weight: 400;
     font-size: 16px;
     margin-right: 650px;
+    margin-bottom: 0;
 }
 .facts-list{
     display: grid;
@@ -195,6 +198,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 0px;
     
 }
 .facts-info{
@@ -211,8 +215,9 @@ body{
     color: #424242;
 }
 .massage-for{
-
+    color:#727272;
 }
+
 /*----------------
   Section-four 
 -----------------*/
@@ -249,6 +254,47 @@ body{
 /*----------------
    Section-Five
 ----------------*/
+.contracts{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 144, 14, 0.1) ;
+    gap:100px;
+    padding: 40px 150px;
+    margin-top: 100px;
+}
+.contract-title{
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.contract-title{
+    text-align: left;
+}
+.contract-desc{
+    color:  #727272;
+    margin-bottom: 30px;
+    
+}
+.contract a{
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+}
+.contract> input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+.btn-submit{
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    padding: 20px 30px;
+}
 
 /*-------------
    Footer 
@@ -262,5 +308,14 @@ body{
     color: #424242;
     border-radius: 8px;
     padding: 30px 0;
-    margin: 100px 150px;
+    margin: 100px 150px 200px;
+}
+
+/*-----------------
+   Media-Queries
+------------------*/
+@media only screen (max-width:576px){
+    body,html{
+        width:100%;
+    }
 }
