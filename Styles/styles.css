@@ -167,7 +167,12 @@ body{
    padding: 30px 30px;
    margin-top: -90px;
    margin-left: -70px;
-   
+}
+.btn-10year:hover{
+    transform: scale(1.2);
+    transition:transform 2s ;
+    
+
 }
 
 /*----------------
@@ -286,8 +291,8 @@ body{
     border: 0;
     width: 100%;
     padding: 18px 30px;
+/* Sob to thik ache,tobuo name er input kaj korche na, kno? */
 }
-
 .btn-submit{
     border: none;
     border-radius: 8px;
@@ -395,7 +400,6 @@ body{
         margin:0;
         margin-top: -90px;
     }
-
 /* Section-three */
     .facts{
         margin:0;
@@ -416,6 +420,10 @@ body{
     }
     .facts-info{
         margin: 0;
+    }
+    .facts-info:hover{
+        transform: rotate(360deg);
+        transition: transform 2s ;
     }
 /* Section-four  */
     .sponsors{
